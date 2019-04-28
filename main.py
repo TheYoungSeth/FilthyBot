@@ -37,6 +37,6 @@ async def on_message(message):
 @client.event
 async def on_member_join(member):
     joins = [member, "it mah puss"]
-    client.send_message(client.get_channel("568874563551756303") joins]
+    client.send_message(client.get_channel("568874563551756303"), joins]
 
 client.run("NTcxNzM3NTc0Njc1MzE2NzQ3.XMSGgw.rdr8GNOsk51QPvOPm06V2bUR9k8")
