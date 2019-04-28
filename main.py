@@ -26,4 +26,16 @@ async def on_message(message):
             ranks = "You too good for this planet :D ur already god mode", "U succ in every perspective. it can't be helped", "yo alrighty", "..."
             await client.send_message(message.channel, random.choice(ranks))
 
+    if message.content == "ffmeme":
+        memes = "filthymemes/meme1.png", "filthymemes/meme2.png", "filthymemes/meme3.png", "filthymemes/meme4.png", "filthymemes/meme5.png", "filthymemes/meme6.png", "filthymemes/meme7.png", "filthymemes/meme8.png", "filthymemes/meme9.png", "filthymemes/meme10.jpg", "filthymemes/meme11.jpg", "filthymemes/meme12.jpg", "filthymemes/meme12.gif"
+        await client.send_file(message.channel, random.choice(memes))
+
+    if message.content == "ffhelp":
+        helps = discord.Embed(title="Da Filthy Commands", description='ffstop - will stoping you \n ffrank - Will rank you \n ffmeme - some filthy memes \n ffhelp - this.', url="https://www.youtube.com/user/TVFilthyFrank", color=discord.Colour.gold())
+        await client.send_message(message.channel, embed=helps)
+
+@client.event
+async def on_member_join(member):
+    client.send_message(client.get_channel("568874563551756303"), member + " it mah puss u anus")
+
 client.run("NTcxNzM3NTc0Njc1MzE2NzQ3.XMSGgw.rdr8GNOsk51QPvOPm06V2bUR9k8")
