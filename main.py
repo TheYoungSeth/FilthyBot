@@ -34,9 +34,4 @@ async def on_message(message):
         helps = discord.Embed(title="Da Filthy Commands", description='ffstop - will stoping you \n ffrank - Will rank you \n ffmeme - some filthy memes \n ffhelp - this.', url="https://www.youtube.com/user/TVFilthyFrank", color=discord.Colour.gold())
         await client.send_message(message.channel, embed=helps)
 
-@client.event
-async def on_member_join(member):
-    joins = [member, "it mah puss"]
-    await client.send_message(client.get_channel("568874563551756303"), joins]
-
 client.run("NTcxNzM3NTc0Njc1MzE2NzQ3.XMSGgw.rdr8GNOsk51QPvOPm06V2bUR9k8")
