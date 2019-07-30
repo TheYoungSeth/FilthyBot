@@ -1,0 +1,1 @@
+command_meme=("ffmeme", "Ffmeme", "fFmeme", "FFmeme")
