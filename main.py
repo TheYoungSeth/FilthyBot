@@ -83,4 +83,4 @@ async def on_member_unban(guild, user):
     logs_channel = client.get_channel("606206039179788348")
     await client.send_message(logs_channel, "**" + user.name + "** got unbanned from **" + guild.name + "**")
 
-client.run("NTcxNzM3NTc0Njc1MzE2NzQ3.XUCzMQ.NtYnnloSKbaJuEGN0_7PiMx3IsI")
+client.run(TOKEN)
